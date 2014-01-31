@@ -85,9 +85,9 @@ void draw() {
     if (points != null) {   
       // now we draw our lines
       for (int j=0; j<points.length; j++) {  
-        line(0, -200, points[j].x, points[j].y); // fixed point depending on the translate command above
+        //line(0, -200, points[j].x, points[j].y); // fixed point depending on the translate command above
         // try uncommenting the following line
-        //line(mouseX-width/2, mouseY-height/2, points[j].x, points[j].y);
+        line(mouseX-width/2, mouseY-height/2, points[j].x, points[j].y);
       }
     }
     popMatrix();

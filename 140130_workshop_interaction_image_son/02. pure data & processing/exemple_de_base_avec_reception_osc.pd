@@ -1,0 +1,36 @@
+#N canvas 763 91 660 531 10;
+#X declare -lib mrpeach;
+#X obj 201 312 osc~;
+#X obj 202 418 *~;
+#X obj 317 372 vline~;
+#X obj 317 290 bng 50 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 204 238 hsl 128 15 50 5000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 2089 1;
+#X floatatom 208 259 8 0 0 0 - - -;
+#X obj 202 444 dac~;
+#X obj 201 204 t b f;
+#X obj 16 4 import mrpeach;
+#X obj 17 35 mrpeach/udpreceive 57120;
+#X obj 17 58 mrpeach/unpackOSC;
+#X obj 29 88 print rawOSC;
+#X obj 118 233 print;
+#X obj 17 111 routeOSC /frequence;
+#X obj 17 134 s frequence;
+#X obj 201 177 r frequence;
+#X msg 317 345 1 30 \, 0 50 100;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 2 0 1 1;
+#X connect 3 0 16 0;
+#X connect 4 0 5 0;
+#X connect 4 0 0 0;
+#X connect 7 0 3 0;
+#X connect 7 1 4 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 10 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 12 0;
+#X connect 15 0 7 0;
+#X connect 16 0 2 0;

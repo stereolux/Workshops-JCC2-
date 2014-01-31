@@ -62,6 +62,7 @@ void draw() {
 
 //handle key event
 void keyPressed() {
+  println(key);
   if (key == 's') { 
     pg.save("font-"+minute()+"m"+second()+"s"+millis()+".png"); // save our image with a time tag
   }
