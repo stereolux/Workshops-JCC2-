@@ -1,0 +1,37 @@
+Cette archive a été créée pour le worshop code creatif processing Janvier 2014
+On y trouvera quelques sketches processing, avec une progression
+
+////////////////////////////////
+
+Dans le repertoire "simple", un travail de typo basé sur l'utilisation des objets PGraphic.
+	On dessine les glyphs en blanc sur fond noir dans un buffer (PGraphic) non affiché,
+	des points 2D (pixels) sont tirés au hasard et on test leurs couleurs dans le buffer, 
+		si le pixel tiré est blanc, le pixel est sur un caractère et on peut dessiner un disque (par exemple)
+	
+V1 : disques
+V2 : placement de forme svg (fichier externe)
+V3 : on joue en 3D
+V4 : on ajoute des courbes 3D qui bougent avec le vent
+
+////////////////////////////////
+
+Dans le repertoire "avancé", un travail sur de la generation de fonte ttf
+        (basé sur geomerative et fontastic)
+
+arrowTypoV1 : travail sur du titrage : des objets sont placés sur les contours des glyphs (respect des tangentes)
+arrowTypoV2 : meme chose en animant ces objets
+fontasticIntro : un exemple de base pour introduire fontastic (d'après Andreas Koller http://andreaskoller.com)
+fontasticSickFontV1 : on infecte une fonte par un virus circulaire. 
+				      on onlève un disque (placé aléatoirement) de chaque glyph.
+					  Opération binaire (difference)
+V2 : meme chose avec plusieurs disques
+V3 : les virus viennent se greffer sur les glyphs (union binaire)
+V4 : memes virus greffons, mais à présent ils se collent sur les bords des glyphs
+V5 : regroupement dans le meme sketch et sauvegarde des fontes avec un nom approprié
+
+////////////////////////////////
+Enjoy ;-) www.ericlanguenou.fr
+
+
+
+
